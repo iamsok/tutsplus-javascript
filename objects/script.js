@@ -15,4 +15,4 @@ var upperCase = obj.toUpperCase();
 var lowerCase = obj.toLowerCase();
 
 alert(upperCase);
-alert(lowerCase);
+alert(lower Case);
