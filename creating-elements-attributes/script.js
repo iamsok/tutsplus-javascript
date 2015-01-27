@@ -1,18 +1,15 @@
 (function(){
 
-
-
 var doc = document,
-  el = doc.createElement("p"),
-  content = doc.createTextNode("<strong>This was dynamically created</strong>");
   pFoo = doc.getElementById("foo");
 
-el.appendChild(content);
-el.setAttribute("align", "center");
-el.id = "bar";
+var html = el.innerHTML;
 
-pFoo.parentNode.appendChild(el);
+html = html + "<br>This was, too1</br>";
+html = html + "<br>This was, too2</br>";
+html = html + "<br>This was, too3</br>";
 
-doc.body.appendChild(el);
+pFoo.innerHTML = html;
+// doc.body.appendChild(el);
 
 }());
